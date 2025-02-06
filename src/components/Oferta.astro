@@ -4,8 +4,8 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
     
     {[
-        { img: "src/assets/bus.jpg", title: "Venta de Autobuses", desc: "Contamos con una amplia gama de autobuses nuevos y usados, adecuados para todo tipo de necesidades de transporte.", ref: "/unidades" },
-        { img: "src/assets/mecanico.jpg", title: "Servicios para Unidades", desc: "Brindamos una serie de servicios para el mantenimiento de tus vehículos, asegurando su rendimiento óptimo y durabilidad.", ref: "/servicios"  }
+        { img: "/assets/bus.jpg", title: "Venta de Autobuses", desc: "Contamos con una amplia gama de autobuses nuevos y usados, adecuados para todo tipo de necesidades de transporte.", ref: "/unidades" },
+        { img: "/assets/mecanico.jpg", title: "Servicios para Unidades", desc: "Brindamos una serie de servicios para el mantenimiento de tus vehículos, asegurando su rendimiento óptimo y durabilidad.", ref: "/servicios"  }
       ].map(({ img, title, desc, ref }) => (
       <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
         <img src={img} alt={title} class="w-full h-60 object-cover rounded-lg mb-4" loading="lazy" />
