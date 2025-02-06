@@ -1,0 +1,96 @@
+---
+const trucks = [
+{
+      image: "https://scontent.fmex27-1.fna.fbcdn.net/v/t45.5328-4/469333586_443746568773112_8395875391757236947_n.jpg?stp=c124.0.320.320a_dst-jpg_p320x320_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c66aae&_nc_ohc=R5qJbsn2kEkQ7kNvgEqLhH-&_nc_oc=AdhLsDJc1cVIsfjMHI6w0Ittqg-K5N5eF59NugylUXlVRNZaT1BZ_I9EkwrKo7z1Tuw&_nc_zt=23&_nc_ht=scontent.fmex27-1.fna&_nc_gid=AoCWTO2QR3E222f6lfkibT4&oh=00_AYB_TuuVQggl0cK3tjqsbWmaOmsMy7ova3LdUJZRZflHgw&oe=67A9FC0F", // Agrega aquí el enlace para la imagen
+      alt: "JAC Eléctrico 2024",
+      title: "JAC Eléctrico",
+      year: "2024",
+      price: "$2,700,000",
+  },
+  {
+    image: "https://scontent.fmex36-1.fna.fbcdn.net/v/t45.5328-4/475528329_8979843658794963_4548917343193324220_n.jpg?stp=c0.68.320.320a_dst-jpg_p320x320_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c66aae&_nc_ohc=TTUszHFrb3IQ7kNvgEHB9pY&_nc_oc=AdhmLH16jADNwdF_oER0kuNlpXRrq-PngCdMeY_HALocarQGMnrzfQr4h04laJ18H-c&_nc_zt=23&_nc_ht=scontent.fmex36-1.fna&_nc_gid=ACdKs2GXpP5PIDqZGlmKhid&oh=00_AYBCjOTVPbVJ-mZ8XRoZ2WdfP3nsajLu_A-SFMLRiZUHvg&oe=67A9CCB2",
+    alt: "Volkswagen 9.150 Ayco 2018",
+    title: "Volkswagen 9.150 Ayco",
+    year: "2018",
+    price: "$730,000",
+  },
+  {
+    image: "https://scontent.fmex31-1.fna.fbcdn.net/v/t45.5328-4/475498571_1648483419394774_1833739833278149644_n.jpg?stp=c58.0.320.320a_dst-jpg_p320x320_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c66aae&_nc_ohc=vwJHU4rlBpsQ7kNvgFhSNaT&_nc_oc=Adh4KBB1nQSV61KEX9p1oRub8QUmR7e_0XgtiOfmsDuKNq44ExOuNnD4XxoARbjTX4M&_nc_zt=23&_nc_ht=scontent.fmex31-1.fna&_nc_gid=A_yjy3SY1Fm_7Id_3zmdjfC&oh=00_AYBv_MkwlDR-oS_QP4cv7KcxbV9AYABAXIrbmijCdB3QJQ&oe=67A9DA63", // Agrega aquí el enlace para la imagen
+
+    alt: "Volkswagen 8.150 2016",
+    title: "Volkswagen 8.150",
+    year: "2016",
+    price: "$580,000",
+  },
+  {
+    image: "https://scontent.fmex5-1.fna.fbcdn.net/v/t45.5328-4/467480527_575518664852682_6888261603415107784_n.jpg?stp=c0.53.320.320a_dst-jpg_p320x320_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c66aae&_nc_ohc=IqJQLPcsspEQ7kNvgGEYpDl&_nc_oc=AdgNdMsoUb1zatOvvqXMjwk5RspCCkoxe_HULp8g1IifKCsgE10Q2c4_PTLqz_wYI9Y&_nc_zt=23&_nc_ht=scontent.fmex5-1.fna&_nc_gid=AhkdjX863DRqsnIWJy7EyYX&oh=00_AYDRwMaIQAxRLc3rTbLLZIiaGjxv3lVtZmlf26N_Ho9hbQ&oe=67A9F9B8", // Agrega aquí el enlace para la imagen
+    alt: "Autobuses MB 2014",
+    title: "Autobuses MB",
+    year: "2014",
+    price: "$680,000",
+  },
+  {
+    image: "https://scontent.fmex26-1.fna.fbcdn.net/v/t45.5328-4/467574246_1245123123228618_6776185477725760923_n.jpg?stp=c53.0.320.320a_dst-jpg_p320x320_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c66aae&_nc_ohc=KtYhXyTX5pYQ7kNvgEBkoI2&_nc_oc=Adi-zOmYaunWe0qdMPB_toYV8heZbwRsyQcDOTkvz2HbiK2uGWuIRkH18HHpa--CmmA&_nc_zt=23&_nc_ht=scontent.fmex26-1.fna&_nc_gid=As_c_rNBfnktFxawpN7dOEW&oh=00_AYDE8qEKp0egDI3OfLjVuUbA78GwJgY0DjZ3qSY7v5Jtpg&oe=67A9FBE6", // Agrega aquí el enlace para la imagen
+    alt: "MB Sprinter 2016",
+    title: "MB Sprinter",
+    year: "2016",
+    price: "$580,000",
+  },
+  {
+    image: "https://scontent.fmex22-1.fna.fbcdn.net/v/t45.5328-4/467417624_1079810013792864_4809960969695336829_n.jpg?stp=c124.0.320.320a_dst-jpg_p320x320_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c66aae&_nc_ohc=KKLq8xKQzFsQ7kNvgH41k3l&_nc_oc=AdiGsl8VOKEoxdz5OB0klVmLswx4idakn9yBB1aPvEspQ-06drbcM1y1oCxxsSGEg4M&_nc_zt=23&_nc_ht=scontent.fmex22-1.fna&_nc_gid=AxPrnV8S_-_BNXIYAoWLpAT&oh=00_AYBPoczGNJ1Z08F01B4yRoXOyi01iMu9vMhd375gtx-pRQ&oe=67A9F703", // Agrega aquí el enlace para la imagen
+    alt: "Suburban 2012",
+    title: "Suburban",
+    year: "2012",
+    price: "$300,000",
+  },
+  {
+    image: "https://scontent.fmex23-1.fna.fbcdn.net/v/t45.5328-4/467257733_2011902202615504_8262270219451259365_n.jpg?stp=c0.53.320.320a_dst-jpg_p320x320_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c66aae&_nc_ohc=KOhK8RtARwMQ7kNvgEubZjP&_nc_oc=Adgn39L2tCMqDzZQzA66dNn-mhYdlNCIjGQDdmOIWPo1iuoktdQTY3CBokbmk82TfUA&_nc_zt=23&_nc_ht=scontent.fmex23-1.fna&_nc_gid=ATz1KdGNq1SEce9YNfRe1lO&oh=00_AYAc9qNXACKX7w9oiR5BFMoQNeavtdJicL8KY6lx6il2rw&oe=67A9E26C", // Agrega aquí el enlace para la imagen
+    alt: "MB Zafiro 2018",
+    title: "MB Zafiro",
+    year: "2018",
+    price: "$1,090,000",
+  },
+
+  {
+    image: "https://scontent.fmex26-1.fna.fbcdn.net/v/t45.5328-4/470488811_1117679379266242_5589632088783262246_n.jpg?stp=c0.53.320.320a_dst-jpg_p320x320_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c66aae&_nc_ohc=H5dfjQHBXwMQ7kNvgEMpl4W&_nc_oc=Adg-iopnxWtsd0Qdem4E3Cqr-2IhHy_-rwwTX9WYQhByK1qs0r0P1IewtTI5ZRjnwBw&_nc_zt=23&_nc_ht=scontent.fmex26-1.fna&_nc_gid=AnICwkzERO0pYUQBbTxc-kg&oh=00_AYAA7YxiS0K4_okNVQi05IFRaxKr46Y0jQplTsWaZ34wvA&oe=67A9CC74", // Agrega aquí el enlace para la imagen
+    alt: "Ford Transit 2019",
+    title: "Ford Transit",
+    year: "2019",
+    price: "$580,000",
+  },
+  {
+    image: "https://scontent.fmex27-1.fna.fbcdn.net/v/t45.5328-4/467304001_933925628799374_390592402441058062_n.jpg?stp=c0.53.320.320a_dst-jpg_p320x320_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c66aae&_nc_ohc=ctKnHsH_V1wQ7kNvgEfj9_C&_nc_oc=AdgWMVlb3SoPqiT688NipkJlvGBbtsmqputLiLSSfpUBUrdCJcGK_kXG0dk755Z5eiw&_nc_zt=23&_nc_ht=scontent.fmex27-1.fna&_nc_gid=AgrelepERA7OzKTbmo34tBE&oh=00_AYA0k7jHU5rDo5C888kTffzamwiUhGr7SHi7CvB4sxnz9w&oe=67A9DA53", // Agrega aquí el enlace para la imagen
+    alt: "Volkswagen Cráter 2016",
+    title: "Volkswagen Cráter",
+    year: "2016",
+    price: "$680,000",
+  },
+];
+
+---
+
+<div class="bg-white py-8">
+  <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+    <h2 class="text-2xl text-center font-bold tracking-tight text-gray-900">UNIDADES DISPONIBLES</h2>
+
+    <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+      {trucks.map((truck) => (
+        <div class="group relative">
+          <img src={truck.image} alt={truck.alt} class="aspect-square w-full rounded-md bg-gray-200 object-cover  lg:aspect-auto lg:h-80">
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  {truck.title}
+
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">{truck.year}</p>
+            </div>
+            <p class="text-sm font-medium text-gray-900">{truck.price}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+---
+const logos = [
+  { src: "src/assets/mb.svg", alt: "Logo 2" },
+  { src: "src/assets/jac.png", alt: "Logo 1" },
+  { src: "src/assets/vol.svg", alt: "Logo 3" },
+  { src: "src/assets/man.png", alt: "Logo 4" },
+  { src: "src/assets/vw.svg", alt: "Logo 5" },
+
+];
+---
+
+<div class="w-full py-16 flex flex-wrap justify-around gap-6">
+  {logos.map((logo) => <img src={logo.src} alt={logo.alt} class="h-12 w-auto" />)}
+</div>
