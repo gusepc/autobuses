@@ -1,13 +1,14 @@
 ---
-
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import Oferta from '../components/Oferta.astro';
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+const title = "Autobuses en Venta";
+const description = "Compra autobuses nuevos y usados para transporte público y privado. Encuentra opciones ideales para tu negocio.";
+const keywords = "autobuses, venta, transporte público, vehículos usados, autobuses nuevos";
 ---
 
-<Layout>
-	<Hero />
-	<Oferta ClassName="bg-black"/>
+<Layout title={title}>
+  <Hero description={description} />
+  <Oferta keywords={keywords} />
 </Layout>

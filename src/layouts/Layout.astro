@@ -2,30 +2,64 @@
 import "../styles/global.css";
 import Navbar from "../components/base/Navbar.astro";
 import Footer from "../components/base/Footer.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
 ---
+
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/fav.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Autobuses en Venta</title>
-	</head>
-	<body>
-		<Navbar/>
-		<slot />
-		<Footer/>
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Favicon para Safari -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/fav.svg" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Compra autobuses de calidad en venta. Encuentra vehículos ideales para transporte público o privado. Talleres especializados en mantenimiento y reparación." />
+    <meta name="keywords" content="autobuses, venta de autobuses, transporte público, vehículos de transporte, autobuses nuevos, autobuses usados" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="Compra autobuses de calidad en venta. Encuentra vehículos ideales para transporte público o privado." />
+    <meta property="og:image" content="/path/to/your/image.jpg" />
+    <meta property="og:url" content="https://tu-dominio.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content="Compra autobuses de calidad en venta. Encuentra vehículos ideales para transporte público o privado." />
+    <meta name="twitter:image" content="/path/to/your/image.jpg" />
+
+    <!-- General Meta Tags -->
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Title -->
+    <title>{title}</title>
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://tu-dominio.com" />
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-
-		margin: 0;
-		width: 100%;
-		height: 100%;
-		touch-action: manipulation;
-	}
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    touch-action: manipulation;
+  }
 </style>

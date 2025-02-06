@@ -1,12 +1,12 @@
 ---
-
 import Layout from '../layouts/Layout.astro';
-import Unidades from '../components/Unidades.astro';
+import Unidade from '../components/Unidades.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const title = "Unidades | Autobuses en Venta";
+const description = "Descubre nuestra variedad de unidades de autobuses nuevos y usados. Encuentra el modelo perfecto para tus necesidades de transporte público o privado.";
+const keywords = "autobuses, unidades, venta de autobuses, vehículos de transporte, autobuses nuevos, autobuses usados";
 ---
 
-<Layout>
-    <Unidades/>
+<Layout title={title}>
+  <Unidade description={description} keywords={keywords} />
 </Layout>
